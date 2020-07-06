@@ -1,0 +1,33 @@
+titile : 제목.
+
+ul : unorderd list 번호없는 리스트
+ol : orderd list 번호있는 리스트
+	li : list 위의 자식 태그
+
+p : paragraph
+style로 마진(여백) 등 여러 스타일 가능
+<p style="margin-bottom:85px;">
+
+br : break 줄바꿈
+
+h1~6 : 헤드라인 (글씨크게)
+
+strong : 굵게
+
+a : anchor 하이퍼링크 태그 href="http://www.~" href:하이퍼링크 레퍼런스 a태그는 anchor의 약자
+target 속성으로 새 탭에서 열기 가능(_black) title은 마우스 올렸을때 글자
+
+u : underline
+
+css에서 태그 안에 직접 style속성 부여해서 css하는 것이 inline style tag라고 함
+
+class 여러개 주고 싶을때 그냥 뒤에 나열해서 쓰면 됨. 띄어쓰기로 구분
+ex) <p class="saw active select"> 하지만 클래스를 여러개 줘서 css적용할 경우 밑에 줄에 있는 것으로 덮어씌우기 때문에 좋지 않음.
+그래서 id를 씀. id가 class보다 상위이기 때문에 class보다 앞에 나와도 id에 적용된 css를 따름. tag<class<id
+
+block이나 inline level element들은 css를 통해 바꿀 수 있다.
+display: block or inline;을 통해서.
+
+<span> : inline level <div> : block level
+
+can i use 사이트는 현재 사용하는 css기술이 해당 브라우저에서 동작 하는지 알아볼 때 좋다.

@@ -1,0 +1,37 @@
+<!doctype html> <!--이 파일은 html 파일이다. 라는 관용적 표현-->
+<html>
+<head>
+  <title>WEB - CSS</title>
+  <meta charset="utf-8">
+  <style>
+    /*block level element*/
+    h1{
+      border-width: 5px;
+      border-color: red;
+      border-style: solid;
+      width: 100px;
+    }
+    /*inline element*/
+    a{
+      border-width: 5px;
+      border-color: red;
+      border-style: solid;
+      display: block;
+    }
+    h2, h3{ /*이렇게 한번에 가능.*/
+      border: 3px blue solid; /*이렇게 중복은 띄어쓰기로 구분가능.*/
+      padding: 20px; /*박스 안쪽 여분.*/
+      margin: 20px; /*박스 바깥쪽 여분.*/
+    }
+  </style>
+</head>
+
+<body>
+  <h1>css</h1><a href="https://namu.wiki/w/CSS">HTML</a> 등의 마크업 언어로 작성된 문서가 실제로
+  웹사이트에 표현되는 방법을 정해주는 언어.
+  <h2>test</h2><h3>이것두.</h3>
+
+CSS의 C가 Cascading의 약자인데, 이는 상위 요소의 스타일 속성을 자손
+요소들에게 상속시켜주는 모습이 DOM 트리구조에서 마치 폭포수처럼 내려가는 모습을 닮았기 때문이다.[1]
+</body>
+</html>
