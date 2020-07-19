@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+<body>
+  <h1>object</h1>
+  <h2>create</h2>
+  <script>
+    function wr(text){
+      document.write(text+"<br>");
+    }
+    var te = {
+      "programmer" : "jmLee",
+      "designer" : "jwKim"
+    }
+    wr("programmer : "+te.programmer);
+    wr("designer : "+te.designer);
+    te.writer = "hwPark";
+    wr("writer : "+te.writer);
+    te["data scientist"] = "mj Lee";
+    wr("data scientist : "+te["data scientist"]);
+  </script>
+  <h2>iterate</h2>
+  <script>
+    for(var key in te){
+      wr(key+" : "+te[key]);
+    }
+  </script>
+  <h2>property & method</h2>
+  <script>
+    function iterator(dd){
+      for(var key in dd){
+        wr(key+" : "+dd[key]);
+      }
+    }
+    te.showAll = function(){
+      iterator(this);
+    }
+    te.showAll();
+  </script>
+</body>
+</html>

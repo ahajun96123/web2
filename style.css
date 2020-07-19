@@ -1,0 +1,40 @@
+<style>
+  body{
+    margin: 0;
+  }
+  a{                                      /*//선택자*/
+    /*color: black;*/
+    text-decoration: none;  /*밑줄 없앰   //선언(declaration) text-decoration: (property) none (value)*/
+  }
+  h1{
+    font-size: 45px;
+    text-align: center;
+    border-bottom: solid 1px gray;
+    padding: 10px;
+    margin: 0;
+  }
+  #grid{
+    display: grid;
+    grid-template-columns: 180px 1fr;
+  }
+  #grid ol{         /*grid id 내부 element중에 ol 태그*/
+    border-right: solid gray 1px;
+    width: 120px;
+    margin: 0;
+    padding: 10px 0 20px 40px;
+  }
+  #grid #article{
+    padding-left: 20px;
+  }
+  @media(max-width:750px){
+    #grid{
+      display: block;
+    }
+    #grid ol{
+      border-right: none;
+    }
+    h1{
+      border-bottom: none;
+    }
+  }
+</style>
